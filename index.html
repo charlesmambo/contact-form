@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+  <h1>Contact Us</h1>
+
+  <div class="form">
+    <form autocomplete="off">
+
+      <div class="names-input-container">
+      <div class="form-control">
+        <label>First Name <span class="star"> *</span></label>
+        <input type="text" name="firstname" placeholder="Enter your name" autocomplete="off">
+        <small>This field is required</small>
+      </div>
+
+      <div class="form-control">
+        <label>Last Name <span class="star">*</span></label>
+        <input type="text" name="lastname" placeholder="Enter your name" autocomplete="off">
+        <small>This field is required</small>
+      </div>
+    </div>
+
+      <div class="form-control m-space">
+        <label>Email <span class="star">*</span></label>
+        <input type="email" name="email" placeholder="Enter your email" class="email" autocomplete="off">
+        <small>Please enter valid email</small>
+      </div>
+
+      <div class="qt-container m-space">
+        <div>
+          <label>Query Type <span class="star">*</span></label>
+          <div class="check-container">
+            <input id="checkbox" type="checkbox" name="general-inquiry">
+            <p>General Inquiry</p>
+          </div>
+          <small>Please select a query type</small>
+        </div>
+        <div>
+          <br>
+          <div class="check-container">
+            <input type="checkbox" name="support-request">
+            <p>Support Request</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-control m-space textarea">
+          <label>Message <span class="star">*</span></label>
+          <textarea name="message" autocomplete="off" placeholder="Your message"></textarea>
+          <small>This field is required</small>
+      </div>
+
+      <div class="m-space">
+         <div class="check-to-submit">
+          <input type="checkbox" name="consent">
+          <p> I consent to being contacted by the team</p>
+         </div>   
+          <small>To submit this form, please consent to being contacted</small>
+      </div>
+    
+      <div class="form-control">
+        <button>Submit</button>
+    </div>
+    </form>
+  </div>
+</div>
+  
+
+</body>
+</html>

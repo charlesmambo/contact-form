@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Karla", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #91DDCF;
+}
+
+.form-container {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    width: 33vw;
+    padding: 2rem;
+    border-radius: 0.3rem;
+    background-color: #fdfdfd;
+}
+
+h1 {
+    text-align: center;
+    color: #09093f;
+}
+
+.form {
+    margin-top: 1.3rem;
+}
+
+form {
+    box-sizing: border-box;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    width: 100%;
+}
+
+.m-space {
+ margin-top: 0.8rem !important;
+}
+
+.form-control label{
+  font-size: 0.8rem;
+  color: #8d8b8b;
+}
+
+.star {
+    color: #0b970b;
+}
+
+.form-control input{
+    border: 1px #989898 solid;
+    border-radius: 0.2rem;
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9rem;
+    outline: none;
+    width: 98%;
+    box-sizing: border-box;
+    background-color: transparent;
+  }
+
+  .email {
+    width: 100% !important;
+  }
+
+
+.form-control input::placeholder{
+    font-size: 0.7rem;
+    color: #989898;
+  }
+
+.names-input-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.7rem;
+}
+
+small {
+    font-size: 0.7rem; 
+    color: #ff0000;
+    margin: 0.1rem 0;
+    display: none;
+}
+
+.qt-container {
+    margin-top: 1rem !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.qt-container label {
+    font-size: 0.8rem;
+  color: #8d8b8b; 
+}
+.check-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.check-container {
+    border: 1px #989898 solid;
+    border-radius: 0.2rem;
+    padding: 0.5rem 0.8rem; 
+    width: 13.8vw;
+    margin-top: 0.7rem;
+}
+
+.check-container {
+    font-size: 0.8rem;
+    color: #989898;  
+}
+
+.textarea{
+    width: 100% !important;
+}
+
+.textarea textarea{
+    border: 1px #989898 solid;
+    border-radius: 0.2rem;
+    padding: 0.9rem 0.8rem;
+    font-size: 0.9rem;
+    width: 100% !important;
+    height: 80px;
+    outline: none;
+    resize: none;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+.textarea textarea::placeholder {
+    font-size: 0.7rem;
+    color: #989898;  
+}
+
+.check-to-submit{
+    font-size: 0.8rem;
+    color: #989898;  
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.form-control button {
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9rem;
+    background-color: #197860; 
+    font-weight: 600;
+    color: #fdfdfd;  
+}
