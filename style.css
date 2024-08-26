@@ -18,7 +18,7 @@ body {
 
 .form-container {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    width: 33vw;
+    width: 400px;
     padding: 2rem;
     border-radius: 0.3rem;
     background-color: #fdfdfd;
@@ -91,6 +91,11 @@ small {
     display: none;
 }
 
+.consent-text {
+   position: relative;
+   top: -10px;
+}
+
 .qt-container {
     margin-top: 1rem !important;
     display: flex;
@@ -111,8 +116,9 @@ small {
     border: 1px #989898 solid;
     border-radius: 0.2rem;
     padding: 0.5rem 0.8rem; 
-    width: 13.8vw;
+    width: 100%;
     margin-top: 0.7rem;
+    box-sizing: border-box;
 }
 
 .check-container {
