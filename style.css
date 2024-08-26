@@ -14,6 +14,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #91DDCF;
+    padding: 1rem 0;
 }
 
 .form-container {
@@ -88,6 +89,7 @@ small {
     font-size: 0.7rem; 
     color: #ff0000;
     margin: 0.1rem 0;
+    width: 100%;
     display: none;
 }
 
@@ -167,3 +169,23 @@ small {
     font-weight: 600;
     color: #fdfdfd;  
 }
+
+@media only screen and (max-width: 600px) {
+    .form-container {
+        width: 80vw;
+        padding: 1.3rem;
+    }
+
+    .qt-container {
+      gap: 1rem;
+    }
+
+    .check-container{
+        gap: 0.5rem;
+        margin-bottom: 0.3rem;
+    }
+    .form-control button {
+        padding: 0.8rem;
+
+    }
+  }
