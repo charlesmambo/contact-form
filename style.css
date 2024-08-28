@@ -9,17 +9,18 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #91DDCF;
     padding: 1rem 0;
+    position: relative;
 }
 
 .form-container {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    width: 400px;
+    width: 370px;
     padding: 2rem;
     border-radius: 0.3rem;
     background-color: #fdfdfd;
@@ -46,7 +47,7 @@ form {
 }
 
 .m-space {
- margin-top: 0.8rem !important;
+ margin-top: 0.6rem !important;
 }
 
 .form-control label{
@@ -95,14 +96,11 @@ small {
 
 .consent-text {
    position: relative;
-   top: -10px;
+   top: -8px;
 }
 
 .qt-container {
     margin-top: 1rem !important;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .qt-container label {
@@ -119,7 +117,7 @@ small {
     border-radius: 0.2rem;
     padding: 0.5rem 0.8rem; 
     width: 100%;
-    margin-top: 0.7rem;
+    margin-top: 0.5rem;
     box-sizing: border-box;
 }
 
@@ -168,6 +166,39 @@ small {
     background-color: #197860; 
     font-weight: 600;
     color: #fdfdfd;  
+    cursor: pointer;
+    margin-top: 0.7rem;
+}
+
+
+.lastname.invalid,
+.firstname.invalid,
+.email.invalid,
+.textarea.invalid {
+    border: 1px solid rgb(255, 68, 0);   
+}
+
+.align {
+    display: flex;
+    justify-content: space-between;
+}
+
+.check-container {
+    margin-bottom: 0.5rem;
+}
+
+.success-box {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    width: 22vw;
+    padding: 1.4rem;
+    border-radius: 0.3rem;
+    background-color: #fff;
+    text-align: center;
+    color: #1c923f;
+    font-size: 0.9rem;
+    position: absolute;
+    top: 0.7rem;
+    right: 1rem;
 }
 
 @media only screen and (max-width: 600px) {
@@ -187,5 +218,8 @@ small {
     .form-control button {
         padding: 0.8rem;
 
+    }
+    .success-box {
+        width: 40vw;
     }
   }

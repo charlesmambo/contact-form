@@ -17,26 +17,28 @@
       <div class="names-input-container">
       <div class="form-control">
         <label>First Name <span class="star"> *</span></label>
-        <input type="text" name="firstname" placeholder="Enter your name" autocomplete="off">
-        <small>This field is required</small>
+        <input type="text" name="firstname" placeholder="Enter your name" autocomplete="off" class="firstname">
+        <small class="required-msg" style="display: none;">This field is required</small>
       </div>
 
       <div class="form-control">
         <label>Last Name <span class="star">*</span></label>
-        <input type="text" name="lastname" placeholder="Enter your name" autocomplete="off">
-        <small>This field is required</small>
+        <input type="text" name="lastname" placeholder="Enter your name" autocomplete="off" class="lastname">
+        <small class="required-msg" style="display: none;">This field is required</small>
       </div>
     </div>
 
-      <div class="form-control m-space">
-        <label>Email <span class="star">*</span></label>
-        <input type="email" name="email" placeholder="Enter your email" class="email" autocomplete="off">
-        <small>Please enter valid email</small>
-      </div>
+    <div class="form-control m-space">
+      <label>Email <span class="star">*</span></label>
+      <input type="email" class="email" name="email" placeholder="Enter your email" autocomplete="off">
+      <small class="required-msg" style="display: none;">This field is required</small>
+      <small class="email-error-msg" style="display: none;">Please enter a valid email</small>
+    </div>
 
       <div class="qt-container m-space">
+        <label>Query Type <span class="star">*</span></label>
+        <div class="align">
         <div>
-          <label>Query Type <span class="star">*</span></label>
           <div class="check-container">
             <input id="checkbox" type="checkbox" name="general-inquiry">
             <p>General Inquiry</p>
@@ -44,17 +46,17 @@
         <small>Please select a query type</small>
         </div>
         <div>
-          <br>
           <div class="check-container support">
             <input type="checkbox" name="support-request">
             <p>Support Request</p>
           </div>
         </div>
       </div>
+      </div>
 
       <div class="form-control m-space textarea">
           <label>Message <span class="star">*</span></label>
-          <textarea name="message" autocomplete="off" placeholder="Your message"></textarea>
+          <textarea name="message" autocomplete="off" placeholder="Your message" class="textarea"></textarea>
           <small>This field is required</small>
       </div>
 
@@ -72,7 +74,12 @@
     </form>
   </div>
 </div>
+
+<div class="success-box" style="display: none;">
+  Your message has been sent successfully!
+</div>
   
 
+<script src="index.js"></script>
 </body>
 </html>
